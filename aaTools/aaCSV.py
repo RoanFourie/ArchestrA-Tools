@@ -32,12 +32,10 @@ def get_values(in_file, out_file, keyword1):
     count1 = 0
     count2 = 0
     i = 0
-    k = 0
     try:
         with open(in_file, 'rt', encoding='utf-16-le') as fi:
             for line in fi: #For each line do the following
                 str_data = line
-                k = k+1
                 if next_row == 1: #Means that a valid keyword was found in the previous row
                     i = 0
                     count1 = 0
