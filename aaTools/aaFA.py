@@ -1,7 +1,7 @@
 """
 Created on 23 Oct 2014
 
-Modules for use with Archestra, various things to make the job easier.
+Modules for use with Wonderware Archestra, various things to make the job easier.
 
 USAGE:
     %prog in_file.csv out_file.txt
@@ -13,7 +13,7 @@ import sys
 def get_fa(in_file, out_file):
     """
     Created on 21 Oct 2014
-    Created for use with Archestra, using the exported csv file from an object.
+    Created for use with Wonderware Archestra, using the exported csv file from an object.
     Lets say you exported a composite object to a csv file and you want all the Field Attributes but with the relevant Tag name appended infront with a ".", this function will get it for you.
     *note that input file encoding have to be UTF-16-LE.
     *note all Field Attributes must start with FA_* 

@@ -1,7 +1,7 @@
 """
 Created on 15 Oct 2014
 
-Modules for use with Archestra, various things to make the job easier.
+Modules for use with Wonderware Archestra, various things to make the job easier.
 
 USAGE:
     %prog in_file.txt out_file.txt
@@ -13,7 +13,7 @@ import sys
 def create_script_tagnames(in_file, out_file):
     """
     Created on 15 Oct 2014
-    Created for use with Archestra to create the if statements used in the scrAssignIO scripts.
+    Created for use with Wonderware Archestra to create the if statements used in the scrAssignIO scripts.
     It takes a text file containing a list of Field Attributes and creates a new text file with the if statements.
     
     USAGE:
