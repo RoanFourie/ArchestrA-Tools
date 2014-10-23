@@ -14,7 +14,8 @@ def get_values(in_file, out_file, keyword1):
     """
     Created on 21 Oct 2014
     Created for use with Archestra, using the exported csv file from an object.
-    Lets say you exported a composite object to a csv file and you want all the short descriptions or all the tagnames, this function will get it for you. 
+    Lets say you exported a composite object to a csv file and you want all the short descriptions or all the tagnames, this function will get it for you.
+    *note that input file encoding have to be UTF-16-LE. 
     
     USAGE:
         %prog in_file.csv out_file.txt %keyword
@@ -33,7 +34,7 @@ def get_values(in_file, out_file, keyword1):
     i = 0
     k = 0
     try:
-        with open(in_file, 'rt') as fi:
+        with open(in_file, 'rt', encoding='utf-16-le') as fi:
             for line in fi: #For each line do the following
                 str_data = line
                 k = k+1
